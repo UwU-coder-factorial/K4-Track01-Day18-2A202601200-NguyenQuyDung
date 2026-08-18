@@ -1,5 +1,19 @@
 # Prototype annotations — không hiển thị cho tester
 
+## Danh sách 9 trạng thái
+
+| Test state | Option | Nội dung |
+|---|---|---|
+| A1 | A | Common Context — bài học, đoạn vừa bỏ lỡ và task chung |
+| A2 | A | Critical Interaction — user tự chọn khái niệm trên bản đồ |
+| A3 | A | Result/User Decision — xem nội dung, đổi khái niệm hoặc quay lại bài |
+| B1 | B | Common Context — cùng bài học, đoạn vừa bỏ lỡ và task chung |
+| B2 | B | Critical Interaction — user trả lời hai câu hỏi chẩn đoán |
+| B3 | B | Result/User Decision — xem evidence, chấp nhận, sửa hoặc từ chối giả thuyết |
+| C1 | C | Common Context — cùng bài học, đoạn vừa bỏ lỡ và task chung |
+| C2 | C | Critical Interaction — user xem và xác nhận phạm vi tóm tắt |
+| C3 | C | Result/User Decision — đọc tóm tắt, kiểm tra slide gốc hoặc quay lại bài |
+
 ## Option A
 
 - **We expect the tester to:** Mở bản đồ, tự chọn một khái niệm và quyết định có xem khái niệm còn lại hay quay lại bài học.
