@@ -64,3 +64,44 @@ Prototype A/B/C chạy độc lập bằng HTML/CSS/JavaScript và dùng chung c
 - **Option C:** User chủ động bấm “Bắt kịp”, đọc tóm tắt và có thể mở slide gốc.
 
 Annotation dành cho người facilitate nằm tại [prototype-annotations.md](./prototype-annotations.md), không đưa cho tester xem.
+
+## Chặng 5 — Chuẩn bị kịch bản Test (Test Plan & Test Cases)
+
+### 1. Ngữ cảnh thử nghiệm (Context Setup)
+> *"Bạn đang học bài 'Application Layer và Foundation Model' nhưng vừa bị bỏ lỡ một đoạn giảng giải quan trọng. Bạn cần nhanh chóng lấy lại kiến thức để có thể tiếp tục hoàn thành bài học."*
+
+### 2. Nhiệm vụ chung cho Tester (Common Task)
+> *"Hãy dùng thử từng phương án để tìm hiểu và giải thích được câu hỏi: 'Một ứng dụng AI (Application Layer) khác gì so với Foundation Model?'"*
+
+### 3. 5 Điểm quan sát trọng yếu (Observation Points)
+1. **Hành động đầu tiên:** Tester bấm vào đâu đầu tiên khi mở giao diện (nút bấm chính, tab chuyển đổi hay đọc nội dung bài học)?
+2. **Điểm khựng/Mất thời gian:** Tester dừng lại lâu nhất ở bước nào (đọc bản đồ, trả lời câu hỏi chẩn đoán hay xem tóm tắt)?
+3. **Độ hiểu về AI Capability & Limitation:** Tester có nhận ra sự khác biệt giữa sơ đồ tĩnh (Option A), gợi ý suy luận từ AI (Option B) và tóm tắt nhanh (Option C) không?
+4. **Hành vi Sửa sai & Kiểm soát (Control & Recovery):** Tester có thử bấm đổi khái niệm, từ chối giả thuyết AI hoặc mở lại slide gốc không?
+5. **Cảm nhận sự tin tưởng & Tốc độ:** Tester cảm thấy phương án nào giúp họ tự tin giải thích lại bài học nhanh nhất?
+
+### 4. Bảng Test Cases chi tiết cho từng Option
+
+| Test Case ID | Option | Thao tác kỳ vọng (Test Steps) | Kết quả mong đợi (Expected Outcome) | Tiêu chí Đạt (Pass Criteria) |
+|---|---|---|---|---|
+| **TC-A01** | **Option A** | 1. Bấm "Mở bản đồ kiến thức"<br>2. Chọn node "Foundation Model"<br>3. Chọn node "Application Layer"<br>4. Bấm "Quay lại bài học" | Hiển thị đúng nội dung từng khái niệm; Tester tự chủ động đọc và chuyển đổi giữa 2 khái niệm. | Tester hiểu đây là sơ đồ tham khảo tĩnh, tự lựa chọn nội dung muốn tra cứu. |
+| **TC-B01** | **Option B** | 1. Bấm "Bắt đầu chẩn đoán"<br>2. Trả lời 2 câu hỏi lựa chọn<br>3. Xem giả thuyết từ AI & độ chắc chắn<br>4. Thử bấm "Ôn Foundation Model" hoặc "Không đúng, chọn lại" | AI đưa ra gợi ý kèm lý do (evidence); Tester nhận diện được đây là giả thuyết gợi ý của AI. | Tester biết AI chỉ đưa ra gợi ý có độ chắc chắn vừa phải và biết cách từ chối/chấp nhận. |
+| **TC-C01** | **Option C** | 1. Bấm nút "Bắt kịp 1–3 slide gần nhất"<br>2. Đọc tóm tắt nhanh<br>3. Bấm "Mở slide gốc" để kiểm chứng | AI hiển thị tóm tắt ngắn các slide 4–6; Tester mở được nội dung slide gốc chi tiết. | Tester hiểu nút này giúp tóm tắt nhanh slide vừa qua và biết mở lại slide gốc để đối chứng. |
+
+---
+
+## Chặng 6 — Khung ghi nhận kết quả Test (Feedback Note & Next Change)
+
+*(Khung điền thông tin sau khi thử nghiệm với 3 người)*
+
+### 1. Bảng ghi nhận phản hồi 3 Tester (Feedback Notes)
+
+| Tester | Option yêu thích nhất | Điểm họ khựng lại / Mơ hồ | Gợi ý / Phản hồi từ Tester |
+|---|---|---|---|
+| **Tester 1** | | | |
+| **Tester 2** | | | |
+| **Tester 3** | | | |
+
+### 2. Thay đổi tiếp theo cho sản phẩm (Group Next Change)
+* **Thay đổi chính nhóm chốt sau bài Test:** *(Điền sau khi test 3 người)*
+
