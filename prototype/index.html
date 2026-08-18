@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Tutor — Ba phương án bắt kịp bài học</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">AI TUTOR · DAY 18 PROTOTYPE</p>
+          <h1>Bắt kịp bài học</h1>
+        </div>
+        <button class="button button-ghost" id="resetAll" type="button">Reset prototype</button>
+      </header>
+
+      <section class="context-card" aria-labelledby="context-title">
+        <div class="context-copy">
+          <span class="status-pill">Bài 04 · đang học</span>
+          <h2 id="context-title">Application Layer và Foundation Model</h2>
+          <p class="muted">Bạn vừa bỏ lỡ một đoạn giải thích. Hãy dùng từng phương án để xác định điểm vướng và tiếp tục bài học.</p>
+          <div class="task-box">
+            <strong>Nhiệm vụ của bạn</strong>
+            <p>Hãy tìm cách hiểu đủ hai khái niệm để giải thích: “Một ứng dụng AI khác gì so với foundation model?”</p>
+          </div>
+        </div>
+        <div class="lesson-card">
+          <p class="card-label">Đoạn vừa bỏ lỡ</p>
+          <p class="quote">“Foundation model cung cấp năng lực nền. Application layer biến năng lực đó thành trải nghiệm và quy trình cụ thể cho người dùng.”</p>
+          <p class="source">Slide 4 · 08:12–09:05</p>
+        </div>
+      </section>
+
+      <nav class="option-tabs" aria-label="Chọn phương án prototype">
+        <button class="tab active" data-option="a" type="button"><span>A</span><b>Bản đồ kiến thức</b><small>User tự tìm</small></button>
+        <button class="tab" data-option="b" type="button"><span>B</span><b>Chẩn đoán cùng AI</b><small>AI hỏi trước</small></button>
+        <button class="tab" data-option="c" type="button"><span>C</span><b>Bắt kịp</b><small>AI tóm tắt</small></button>
+      </nav>
+
+      <section class="prototype-panel" id="option-a" aria-live="polite">
+        <div class="panel-heading">
+          <div><span class="option-label option-a-label">OPTION A</span><h2>Bản đồ kiến thức tĩnh</h2></div>
+          <p class="expectation">Bản đồ tham khảo, không chẩn đoán cá nhân.</p>
+        </div>
+        <div class="flow-grid">
+          <div class="interaction-card">
+            <p class="step-label">CRITICAL INTERACTION</p>
+            <h3>Tự chọn nơi muốn bắt đầu</h3>
+            <p class="muted">Bạn tự điều hướng giữa hai khái niệm. Hệ thống không đoán thay bạn.</p>
+            <button class="button button-primary" id="openMap" type="button">Mở bản đồ kiến thức</button>
+            <div class="map" id="knowledgeMap" hidden>
+              <button class="map-node" data-concept="foundation" type="button"><span>01</span>Foundation Model</button>
+              <div class="connector">cung cấp năng lực nền</div>
+              <button class="map-node" data-concept="application" type="button"><span>02</span>Application Layer</button>
+              <p class="micro-note">Chọn một khái niệm để xem nội dung liên quan.</p>
+            </div>
+          </div>
+          <div class="result-card" id="mapResult" hidden>
+            <p class="step-label">RESULT / USER DECISION</p>
+            <div id="mapResultContent"></div>
+            <div class="action-row"><button class="button button-secondary" id="closeMap" type="button">Đổi khái niệm</button><button class="button button-ghost" id="backToLessonA" type="button">Quay lại bài học</button></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="prototype-panel" id="option-b" aria-live="polite" hidden>
+        <div class="panel-heading">
+          <div><span class="option-label option-b-label">OPTION B</span><h2>AI chẩn đoán qua câu hỏi</h2></div>
+          <p class="expectation">AI đưa ra giả thuyết, không khẳng định bạn đang thiếu gì.</p>
+        </div>
+        <div class="flow-grid">
+          <div class="interaction-card">
+            <p class="step-label">CRITICAL INTERACTION</p>
+            <h3>Chẩn đoán cùng AI</h3>
+            <p class="muted">AI sẽ hỏi 2 câu ngắn. Bạn có thể bỏ qua hoặc sửa câu trả lời bất cứ lúc nào.</p>
+            <button class="button button-primary" id="startDiagnosis" type="button">Bắt đầu chẩn đoán</button>
+            <div class="diagnosis" id="diagnosisFlow" hidden>
+              <div class="progress-line"><span id="questionProgress">Câu 1/2</span><span class="muted">Không lưu sau phiên này</span></div>
+              <div id="questionSlot"></div>
+              <div class="action-row"><button class="button button-ghost" id="skipQuestion" type="button">Bỏ qua</button></div>
+            </div>
+          </div>
+          <div class="result-card" id="diagnosisResult" hidden>
+            <p class="step-label">RESULT / USER DECISION</p>
+            <div class="hypothesis"><span class="confidence">Độ chắc chắn: VỪA</span><h3>Giả thuyết của AI</h3><p>Bạn có thể đang cần ôn <strong>Foundation Model</strong> trước khi quay lại phần Application Layer.</p><p class="evidence">Dựa trên câu trả lời: bạn chưa phân biệt được “năng lực nền” và “tính năng của ứng dụng”.</p></div>
+            <div class="action-row"><button class="button button-primary" id="acceptDiagnosis" type="button">Ôn Foundation Model</button><button class="button button-secondary" id="rejectDiagnosis" type="button">Không đúng, chọn lại</button></div>
+            <p class="recovery-note" id="diagnosisRecovery" hidden>Không sao. Bạn có thể tự chọn một chủ đề khác hoặc quay về bài học.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="prototype-panel" id="option-c" aria-live="polite" hidden>
+        <div class="panel-heading">
+          <div><span class="option-label option-c-label">OPTION C</span><h2>Nút “Bắt kịp”</h2></div>
+          <p class="expectation">Tóm tắt slide gần đây, không kiểm tra toàn bộ lỗ hổng kiến thức.</p>
+        </div>
+        <div class="flow-grid">
+          <div class="interaction-card">
+            <p class="step-label">CRITICAL INTERACTION</p>
+            <h3>Khôi phục nhanh nội dung vừa bỏ lỡ</h3>
+            <p class="muted">AI chỉ đọc nội dung bài học hiện tại và tạo một bản tóm tắt ngắn.</p>
+            <button class="button button-primary" id="catchUp" type="button">Bắt kịp 1–3 slide gần nhất</button>
+            <p class="micro-note">AI chỉ hoạt động sau khi bạn bấm nút.</p>
+          </div>
+          <div class="result-card" id="catchupResult" hidden>
+            <p class="step-label">RESULT / USER DECISION</p>
+            <div class="summary"><span class="source-chip">Dựa trên slide 4–6</span><h3>Điểm cần nhớ</h3><ul><li><strong>Foundation model</strong> là năng lực nền có thể phục vụ nhiều tác vụ.</li><li><strong>Application layer</strong> là lớp trải nghiệm, quy trình và giới hạn được thiết kế cho một use case.</li><li>Ứng dụng có thể dùng foundation model nhưng không đồng nghĩa với chính model đó.</li></ul><p class="uncertainty">Đây là tóm tắt ngắn; hãy mở nội dung gốc nếu cần chi tiết.</p></div>
+            <div class="action-row"><button class="button button-primary" id="openSource" type="button">Mở slide gốc</button><button class="button button-secondary" id="dismissSummary" type="button">Đóng tóm tắt</button></div>
+            <div class="source-preview" id="sourcePreview" hidden><strong>Slide 4–6 · nội dung gốc</strong><p>Foundation model cung cấp năng lực nền. Application layer tổ chức năng lực đó thành sản phẩm, workflow và trải nghiệm có mục tiêu.</p><button class="button button-ghost" id="closeSource" type="button">Đóng nội dung gốc</button></div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer-note">Prototype học tập · Canned AI output · Không lưu dữ liệu cá nhân</footer>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
