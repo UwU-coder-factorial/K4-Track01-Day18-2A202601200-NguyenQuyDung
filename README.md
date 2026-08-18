@@ -54,3 +54,13 @@ Hoàn thành ba câu mà không nhắc màu, layout hoặc wording:
 ## Chặng 3 — Human–AI Design Pass
 
 Chi tiết thiết kế Human–AI, Human–AI Decision Table, critical interaction và Gate 3 self-check nằm trong [three-option-design-sheet.md](./three-option-design-sheet.md).
+
+## Chặng 4 — Build 3 Micro-prototypes
+
+Prototype A/B/C chạy độc lập bằng HTML/CSS/JavaScript và dùng chung context, task, fixture `Application Layer vs Foundation Model`. Mở prototype tại [prototype-link.md](./prototype-link.md).
+
+- **Option A:** User tự chọn khái niệm trên bản đồ kiến thức.
+- **Option B:** User trả lời hai câu hỏi và quyết định có chấp nhận giả thuyết của AI hay không.
+- **Option C:** User chủ động bấm “Bắt kịp”, đọc tóm tắt và có thể mở slide gốc.
+
+Annotation dành cho người facilitate nằm tại [prototype-annotations.md](./prototype-annotations.md), không đưa cho tester xem.
