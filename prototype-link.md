@@ -2,6 +2,12 @@
 
 Prototype Chặng 4 là prototype HTML chạy độc lập, không cần API hoặc build tool.
 
+## Link public
+
+[Mở prototype A/B/C trên GitHub Pages](https://uwu-coder-factorial.github.io/K4-Track01-Day18-2A202601200-NguyenQuyDung/prototype/)
+
+## Link local dự phòng
+
 Mở file [`prototype/index.html`](./prototype/index.html) bằng trình duyệt.
 
 ## Cách chạy

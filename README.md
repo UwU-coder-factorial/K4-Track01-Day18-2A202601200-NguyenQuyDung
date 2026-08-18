@@ -57,7 +57,7 @@ Chi tiết thiết kế Human–AI, Human–AI Decision Table, critical interact
 
 ## Chặng 4 — Build 3 Micro-prototypes
 
-Prototype A/B/C chạy độc lập bằng HTML/CSS/JavaScript và dùng chung context, task, fixture `Application Layer vs Foundation Model`. Mở prototype tại [prototype-link.md](./prototype-link.md).
+Prototype A/B/C chạy độc lập bằng HTML/CSS/JavaScript và dùng chung context, task, fixture `Application Layer vs Foundation Model`. [Mở prototype trên GitHub Pages](https://uwu-coder-factorial.github.io/K4-Track01-Day18-2A202601200-NguyenQuyDung/prototype/) hoặc xem hướng dẫn và link dự phòng tại [prototype-link.md](./prototype-link.md).
 
 - **Option A:** User tự chọn khái niệm trên bản đồ kiến thức.
 - **Option B:** User trả lời hai câu hỏi và quyết định có chấp nhận giả thuyết của AI hay không.
@@ -104,4 +104,3 @@ Annotation dành cho người facilitate nằm tại [prototype-annotations.md](
 
 ### 2. Thay đổi tiếp theo cho sản phẩm (Group Next Change)
 * **Thay đổi chính nhóm chốt sau bài Test:** *(Điền sau khi test 3 người)*
-
