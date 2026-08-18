@@ -38,15 +38,15 @@ Liệu việc ôn lại kiến thức nền có thực sự giúp đa số học
 
 | Thành phần | Option A | Option B | Option C |
 | --- | --- | --- | --- |
-| Solution mechanism |  | | |
-| User làm gì? | | | |
-| AI làm gì? | | | |
-| Trigger | | | |
-| Trade-off chính | | | |
+| Solution mechanism | Bản đồ kiến thức tĩnh (thủ công) | AI chẩn đoán qua 2–3 câu hỏi | Nút "Bắt kịp": AI tóm tắt nhanh 1–3 slide gần nhất |
+| User làm gì? | Tự xem sơ đồ, chọn phần bị hổng | Trả lời câu hỏi chẩn đoán của AI | Bấm "Bắt kịp", xem tóm tắt ngắn & ví dụ minh họa |
+| AI làm gì? | Hiển thị nội dung theo User chọn | Đặt câu hỏi & đưa bài ôn phù hợp | Tự trích xuất & tóm tắt ý chính các slide vừa qua |
+| Trigger | Bấm "Xem bản đồ kiến thức" | Bấm "Chẩn đoán cùng AI" | Bấm nút "Bắt kịp" trên giao diện bài học |
+| Trade-off chính | Tốn công tự tìm, dễ chọn sai | Tốn 1–2 phút làm chẩn đoán | Tóm tắt quá ngắn có thể bỏ lỡ chi tiết chuyên sâu |
 
 Distance check
 Hoàn thành ba câu mà không nhắc màu, layout hoặc wording:
 
-A khác B vì ........................................................................................................
-B khác C vì ........................................................................................................
-A khác C vì ........................................................................................................
+**A khác B** vì Option A để user tự tìm lỗ hổng trên sơ đồ tĩnh, còn Option B dùng AI hỏi - đáp để cùng chẩn đoán điểm vướng.
+**B khác C** vì Option B tập trung đào sâu ôn kiến thức nền, còn Option C tập trung khôi phục nội dung slide vừa bỏ lỡ.
+**A khác C** vì Option A user làm chủ hoàn toàn không có AI can thiệp, còn Option C AI tự động cô đọng và tóm tắt sẵn nội dung.
