@@ -65,6 +65,10 @@ Prototype A/B/C chạy độc lập bằng HTML/CSS/JavaScript và dùng chung c
 
 Annotation dành cho người facilitate nằm tại [prototype-annotations.md](./prototype-annotations.md), không đưa cho tester xem.
 
+## Chặng 5 — Chuẩn bị test
+
+Kế hoạch test gồm relevant context, outcome task, observation focus, opening script, compare script, timeline và luật facilitation nằm trong [test-plan.md](./test-plan.md).
+
 ## Chặng 5 — Chuẩn bị kịch bản Test (Test Plan & Test Cases)
 
 ### 1. Ngữ cảnh thử nghiệm (Context Setup)
