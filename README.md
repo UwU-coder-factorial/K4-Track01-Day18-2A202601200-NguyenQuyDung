@@ -50,3 +50,7 @@ Hoàn thành ba câu mà không nhắc màu, layout hoặc wording:
 **A khác B** vì Option A để user tự tìm lỗ hổng trên sơ đồ tĩnh, còn Option B dùng AI hỏi - đáp để cùng chẩn đoán điểm vướng.
 **B khác C** vì Option B tập trung đào sâu ôn kiến thức nền, còn Option C tập trung khôi phục nội dung slide vừa bỏ lỡ.
 **A khác C** vì Option A user làm chủ hoàn toàn không có AI can thiệp, còn Option C AI tự động cô đọng và tóm tắt sẵn nội dung.
+
+## Chặng 3 — Human–AI Design Pass
+
+Chi tiết thiết kế Human–AI, Human–AI Decision Table, critical interaction và Gate 3 self-check nằm trong [three-option-design-sheet.md](./three-option-design-sheet.md).
