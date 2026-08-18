@@ -1,4 +1,4 @@
-# K4-Track01-Day18-2A202601200-NguyenQuyDung
+# Track 1 - Day 18 — Multiple Prototypes - Human–AI design
 
 ## Chặng 1 — Tổng hợp evidence
 
@@ -34,4 +34,19 @@ Liệu việc ôn lại kiến thức nền có thực sự giúp đa số học
 | Situation | Đang học và gặp một đoạn giải thích hoặc bài tập chưa hiểu hoặc chưa kịp hiểu |
 | Task | Xác định điểm vướng và lấy lại đủ kiến thức cần thiết để tiếp tục bài hiện tại |
 | Desired outcome | Tiếp tục bài học nhanh chóng mà không bị mất nhịp hay mơ hồ |
-| Content/data fixture | Khái niệm: Application Layer vs Foundation Model (trích từ dữ liệu phỏng vấn Day 17) |
+| Content/data fixture | Khái niệm: Application Layer vs Foundation Model |
+
+| Thành phần | Option A | Option B | Option C |
+| --- | --- | --- | --- |
+| Solution mechanism |  | | |
+| User làm gì? | | | |
+| AI làm gì? | | | |
+| Trigger | | | |
+| Trade-off chính | | | |
+
+Distance check
+Hoàn thành ba câu mà không nhắc màu, layout hoặc wording:
+
+A khác B vì ........................................................................................................
+B khác C vì ........................................................................................................
+A khác C vì ........................................................................................................
