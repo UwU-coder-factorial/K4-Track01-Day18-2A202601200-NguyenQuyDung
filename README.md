@@ -1,5 +1,12 @@
 # Track 1 - Day 18 — Multiple Prototypes - Human–AI design
 
+## Thành viên
+
+| Tên | MHV |
+| --- | --- |
+| Trần Thị Kiều Trang | 2A202601498 |
+| Nguyễn Quý Dũng | 2A202601200 |
+
 ## Chặng 1 — Tổng hợp evidence
 
 ### 1. Evidence Huddle
@@ -96,15 +103,26 @@ Kế hoạch test gồm relevant context, outcome task, observation focus, openi
 
 ## Chặng 6 — Khung ghi nhận kết quả Test (Feedback Note & Next Change)
 
-*(Khung điền thông tin sau khi thử nghiệm với 3 người)*
+Biểu mẫu ghi nhận chi tiết cho từng người học nằm tại [prototype-feedback-note.md](./prototype-feedback-note.md).  
+Báo cáo phân tích chuyên sâu các Pattern, Group Next Change và Still Unproven nằm tại [group-feedback-synthesis.md](./group-feedback-synthesis.md).
 
 ### 1. Bảng ghi nhận phản hồi 3 Tester (Feedback Notes)
 
 | Tester | Option yêu thích nhất | Điểm họ khựng lại / Mơ hồ | Gợi ý / Phản hồi từ Tester |
 |---|---|---|---|
-| **Tester 1** | | | |
-| **Tester 2** | | | |
-| **Tester 3** | | | |
+| **Tester 1** (Vũ Đình Huy) | **Option C** (Nấc 2) | Tưởng Option A là sơ đồ dạng cây; lo ngại model AI có thể hallucinate khi đọc tóm tắt. | Vừa đọc slide vừa xem tóm tắt trực quan giúp bắt kịp nhanh nhất; cần có nguồn slide gốc đối chứng. |
+| **Tester 2** (Nguyễn Minh Quân) | **Option B** | Khựng lại ở phần đọc giải thích của Option B; flow hơi ngắn chưa đủ ví dụ. | AI giải thích nhanh, đỡ tốn công tìm kiếm; đề xuất nên giải thích keyword trước rồi mới hỏi câu trắc nghiệm kiểm tra. |
+| **Tester 3** (Đào Văn Đạt) | **Option C** (Nấc 1) | Do dự ở nút "Không dùng AI" vs "Dùng AI"; khựng lại ở bước Critical Interaction của Option A & B. | Chọn C để tối ưu thời gian; mong muốn tự chọn từ khóa/slide và để AI tạo bộ câu hỏi kiểm tra lại mức độ hiểu. |
 
 ### 2. Thay đổi tiếp theo cho sản phẩm (Group Next Change)
-* **Thay đổi chính nhóm chốt sau bài Test:** *(Điền sau khi test 3 người)*
+* **Thay đổi chính nhóm chốt sau bài Test:** Hợp nhất ưu điểm tốc độ của **Option C (Tóm tắt nhanh theo phạm vi)** với cơ chế kiểm tra độ hiểu của **Option B (Hỏi - đáp xác nhận)** thành luồng thống nhất: **"Tóm tắt trọng tâm trước → Kiểm tra độ hiểu sau" (Summarize & Verify Flow)**.
+* **Hành động cụ thể:**
+  1. Cung cấp nút tóm tắt 1–3 slide gần nhất kèm định nghĩa keyword và ví dụ trực quan ngay khi học viên bị lỡ nhịp.
+  2. Giữ nguyên liên kết mở slide gốc trực tiếp bên dưới bản tóm tắt để người học đối soát chống hallucination.
+  3. Sau khi đọc tóm tắt, cung cấp tùy chọn cho AI tạo 1–2 câu hỏi trắc nghiệm ngắn để học viên tự kiểm tra xem mình đã hiểu đúng hay chưa trước khi quay lại bài học.
+
+---
+
+## Nhật ký sử dụng AI (AI Support Log)
+
+Chi tiết nhật ký sử dụng AI của 2 thành viên nhóm (Nguyễn Quý Dũng & Trần Thị Kiều Trang) được ghi nhận đầy đủ tại [ai-support-log.md](./ai-support-log.md).
