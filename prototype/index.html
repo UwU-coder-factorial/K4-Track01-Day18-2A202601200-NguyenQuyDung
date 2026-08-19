@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>AI Tutor — 3 Options × 3 States</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=20260819_d" />
   </head>
   <body>
     <main class="shell">
@@ -60,9 +60,11 @@
             <h3>Tự chọn khái niệm muốn kiểm tra</h3>
             <p class="muted">Đây là bản đồ tham khảo. Hệ thống không biết chắc bạn đang thiếu kiến thức nào.</p>
             <div class="map visible-map">
-              <button class="map-node concept-choice" data-concept="foundation" type="button"><span>01</span>Foundation Model</button>
-              <div class="connector">cung cấp năng lực nền cho</div>
-              <button class="map-node concept-choice" data-concept="application" type="button"><span>02</span>Application Layer</button>
+              <button class="map-node concept-choice" data-concept="foundation" type="button"><span>01</span><b>Foundation Model</b><small class="node-desc">Cung cấp năng lực nền tảng chung</small></button>
+              <div class="connector">được đóng gói hoặc mở rộng thành</div>
+              <button class="map-node concept-choice" data-concept="wrapper" type="button"><span>02</span><b>Thin Wrapper</b><small class="node-desc">Lớp vỏ mỏng — rủi ro bị model hấp thụ capability</small></button>
+              <div class="connector">hoặc xây dựng giá trị bền vững qua</div>
+              <button class="map-node concept-choice" data-concept="vertical" type="button"><span>03</span><b>Vertical AI</b><small class="node-desc">AI Expert + Domain Expert (Policy & Phán đoán chuyên gia)</small></button>
               <p class="micro-note" id="conceptHint">Chọn một khái niệm để tiếp tục.</p>
             </div>
             <div class="state-actions"><button class="button button-ghost previous-state" data-previous="1" type="button">Quay lại context</button><button class="button button-primary" id="viewConcept" type="button" disabled>Xem nội dung đã chọn</button></div>
@@ -132,7 +134,13 @@
           <p class="state-count">OPTION B · TRẠNG THÁI 3/3</p>
           <div class="result-card full-card">
             <p class="step-label">RESULT / USER DECISION</p>
-            <div class="hypothesis"><span class="confidence" id="diagnosisConfidence">Độ chắc chắn: VỪA</span><h3>Giả thuyết của AI</h3><p id="diagnosisText">Bạn có thể đang cần ôn <strong>Foundation Model</strong> trước khi quay lại phần Application Layer.</p><p class="evidence" id="diagnosisEvidence">Dựa trên câu trả lời trong phiên hiện tại.</p></div>
+            <div class="hypothesis">
+              <span class="confidence" id="diagnosisConfidence">Độ chắc chắn: VỪA</span>
+              <h3>Giả thuyết của AI</h3>
+              <p id="diagnosisText">Bạn có thể đang cần ôn <strong>Foundation Model</strong> trước khi quay lại phần Application Layer.</p>
+              <div id="diagnosisExplanation" class="diagnosis-explanation"></div>
+              <p class="evidence" id="diagnosisEvidence">Dựa trên câu trả lời trong phiên hiện tại.</p>
+            </div>
             <p class="recovery-note" id="diagnosisDecision">Bạn quyết định phần nào sẽ giao cho AI và phần nào muốn tự kiểm tra.</p>
             <div class="state-actions"><button class="button button-primary" id="acceptDiagnosis" type="button">Ôn Foundation Model</button><button class="button button-secondary previous-state" data-previous="2" type="button">Sửa câu trả lời</button><button class="button button-ghost restart-option" type="button">Từ chối và quay lại</button></div>
           </div>
@@ -170,8 +178,26 @@
           <div class="interaction-card full-card">
             <p class="step-label">CRITICAL INTERACTION</p>
             <h3>Chọn phạm vi để AI tóm tắt</h3>
-            <p>AI sẽ dùng nội dung bài học hiện tại, không dùng lịch sử cá nhân của bạn.</p>
-            <div class="scope-card"><span class="source-chip">Đề xuất</span><strong>Slide 4–6 · khoảng 2 phút gần nhất</strong><p>Gồm định nghĩa Foundation Model, Application Layer và một ví dụ minh họa.</p></div>
+            <p class="muted">AI sẽ dùng nội dung bài học hiện tại, không dùng lịch sử cá nhân của bạn.</p>
+            
+            <div class="slider-container">
+              <div class="slider-header">
+                <label for="summaryScopeSlider" class="slider-label"><strong>Chọn phạm vi bài học:</strong></label>
+                <span class="slider-current-badge" id="sliderScopeLabel">Nấc 2 · 3 slide đề xuất (~3 phút)</span>
+              </div>
+              <input type="range" id="summaryScopeSlider" min="1" max="3" step="1" value="2" aria-label="Chọn phạm vi tóm tắt" />
+              <div class="slider-ticks">
+                <button type="button" class="tick-btn" data-level="1"><span>Nấc 1</span><strong>1 slide vừa lỡ</strong><small>~1 phút</small></button>
+                <button type="button" class="tick-btn active" data-level="2"><span>Nấc 2</span><strong>3 slide đề xuất</strong><small>~3 phút</small></button>
+                <button type="button" class="tick-btn" data-level="3"><span>Nấc 3</span><strong>Toàn bộ bài 04</strong><small>~6 phút</small></button>
+              </div>
+            </div>
+
+            <div class="scope-card" id="scopeCard">
+              <span class="source-chip" id="scopeCardBadge">Đề xuất (Nấc 2/3)</span>
+              <strong id="scopeCardTitle">Slide 4–6 · khoảng 3 phút gần nhất</strong>
+              <p id="scopeCardDesc">Gồm định nghĩa Foundation Model, nguy cơ Wrapper mỏng và mô hình Vertical AI (AI Expert + Domain Expert).</p>
+            </div>
             <p class="uncertainty">Tóm tắt có thể bỏ sót chi tiết chuyên sâu. Bạn vẫn có thể mở slide gốc ở kết quả.</p>
             <div class="state-actions"><button class="button button-ghost previous-state" data-previous="1" type="button">Không dùng AI</button><button class="button button-primary" id="createSummary" type="button">Tạo bản tóm tắt</button></div>
           </div>
@@ -181,8 +207,7 @@
           <p class="state-count">OPTION C · TRẠNG THÁI 3/3</p>
           <div class="result-card full-card">
             <p class="step-label">RESULT / USER DECISION</p>
-            <div class="summary"><span class="source-chip">Dựa trên slide 4–6</span><h3>Điểm cần nhớ</h3><ul><li><strong>Foundation model</strong> cung cấp năng lực nền cho nhiều tác vụ.</li><li><strong>Application layer</strong> biến năng lực đó thành workflow và trải nghiệm cho một use case.</li><li>Một ứng dụng có thể dùng foundation model nhưng không đồng nghĩa với chính model đó.</li></ul><p class="uncertainty">Đây là tóm tắt ngắn; hãy kiểm tra nội dung gốc nếu cần chi tiết.</p></div>
-            <details class="source-details"><summary>Mở slide gốc để kiểm tra</summary><p><strong>Slide 4–6:</strong> Foundation model cung cấp năng lực nền. Application layer tổ chức năng lực đó thành sản phẩm, workflow và trải nghiệm có mục tiêu.</p></details>
+            <div id="summaryResultContent"></div>
             <div class="state-actions"><button class="button button-secondary previous-state" data-previous="2" type="button">Đổi phạm vi</button><button class="button button-ghost restart-option" type="button">Đóng và quay lại bài</button></div>
           </div>
         </article>
@@ -190,6 +215,6 @@
 
       <footer class="footer-note">9 trạng thái: 3 states × 3 options · Canned AI output · Không lưu dữ liệu cá nhân</footer>
     </main>
-    <script src="./app.js"></script>
+    <script src="./app.js?v=20260819_d"></script>
   </body>
 </html>

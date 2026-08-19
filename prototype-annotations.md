@@ -16,21 +16,21 @@
 
 ## Option A
 
-- **We expect the tester to:** Mở bản đồ, tự chọn một khái niệm và quyết định có xem khái niệm còn lại hay quay lại bài học.
-- **Watch for:** Tester có hiểu đây là bản đồ tham khảo không; chọn node nào trước; có đọc source; có cần facilitator chỉ ra node không.
-- **Do not explain:** Ý nghĩa của hai node hoặc việc nên chọn node nào.
+- **We expect the tester to:** Mở bản đồ, tự chọn một trong 3 khái niệm (Foundation Model, Thin Wrapper, Vertical AI) và quyết định có xem tiếp khái niệm khác hay quay lại bài học.
+- **Watch for:** Tester có hiểu đây là bản đồ tham khảo không; chọn node nào trước; có đọc source và quote trích dẫn; có cần facilitator chỉ ra node không.
+- **Do not explain:** Ý nghĩa của các node hoặc việc nên chọn node nào.
 
 ## Option B
 
-- **We expect the tester to:** Bắt đầu chẩn đoán, trả lời hai câu hỏi và quyết định chấp nhận hoặc từ chối giả thuyết của AI.
-- **Watch for:** Tester có hiểu AI chỉ đưa ra giả thuyết không; có do dự ở câu hỏi; có đọc evidence và confidence; có thử recovery không.
+- **We expect the tester to:** Bắt đầu chẩn đoán, trả lời hai câu hỏi (hoặc chọn chưa chắc) và đọc giả thuyết tương ứng cùng phần giải thích ngắn gọn, quyết định chấp nhận hoặc sửa câu trả lời.
+- **Watch for:** Tester có hiểu AI chỉ đưa ra giả thuyết không; có đọc phần giải thích ngắn gọn khi chọn câu chưa chắc; có đọc evidence và confidence; có thử recovery bằng nút "Sửa câu trả lời" không.
 - **Do not explain:** Vì sao AI đưa ra kết quả hoặc câu trả lời “đúng” nào nên được chọn.
 
 ## Option C
 
-- **We expect the tester to:** Chủ động bấm “Bắt kịp”, đọc tóm tắt, kiểm tra slide gốc hoặc đóng tóm tắt.
-- **Watch for:** Tester có hiểu phạm vi 1–3 slide; có đọc nguồn; có nhận ra tóm tắt có thể bỏ sót; chọn mở slide gốc hay tiếp tục.
-- **Do not explain:** Nội dung tóm tắt hoặc vị trí của nút mở slide gốc.
+- **We expect the tester to:** Chủ động bấm “Bắt kịp”, thử điều chỉnh thanh slider 3 nấc phạm vi (1 slide / 3 slide đề xuất / toàn bộ bài), bấm “Tạo bản tóm tắt”, đọc nội dung, kiểm tra slide gốc hoặc đổi phạm vi.
+- **Watch for:** Tester có hiểu ý nghĩa 3 nấc slider; có đọc nguồn và nhãn badge; có nhận ra tóm tắt ngắn có thể bỏ sót chi tiết so với tóm tắt toàn bài; có thử bấm "Đổi phạm vi" để kéo slider lại không.
+- **Do not explain:** Tác dụng của từng nấc slider hoặc vị trí của nút mở slide gốc.
 
 ## Common facilitation
 
