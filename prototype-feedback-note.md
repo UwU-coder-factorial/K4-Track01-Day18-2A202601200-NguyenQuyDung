@@ -12,7 +12,7 @@
 - **Prototype URL:** [https://uwu-coder-factorial.github.io/K4-Track01-Day18-2A202601200-NguyenQuyDung/prototype/](https://uwu-coder-factorial.github.io/K4-Track01-Day18-2A202601200-NguyenQuyDung/prototype/)
 - **Outcome Task dùng chung:** *“Trong tình huống này, hãy dùng từng phương án để hiểu đủ hai khái niệm và giải thích: Một ứng dụng AI khác gì so với foundation model?”*
 - **Ngày thực hiện test:** 8/19/2026
-- **Người thực hiện (Facilitator):** Trần Thị Kiều Trang
+- **Người thực hiện (Facilitator):** Trần Thị Kiều Trang và Nguyễn Quý Dũng (cả hai đều trực tiếp test A/B/C với tester ngoài nhóm; file này tổng hợp các phiên của cả hai)
 - **Người ghi chép (Note-taker):** Nguyễn Quý Dũng
 
 ---

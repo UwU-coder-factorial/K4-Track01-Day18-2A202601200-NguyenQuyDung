@@ -27,12 +27,18 @@
 
 ### AI đã giúp tôi ở đâu?
 
-........................................................................................................................
+- Gợi ý cách rà soát A/B/C theo cơ chế và cách phân chia việc giữa User với AI, để nhóm không chỉ thay đổi layout hoặc wording.
+- Hỗ trợ sắp xếp cấu trúc feedback note, các câu hỏi compare và cách tách `Observed`, `Interpreted`, `Decided — Next Change` và `Still Unproven`.
+- Hỗ trợ rà soát wording cho context, task và các nhãn capability/limit trong prototype.
 
 ### AI sai, hời hợt hoặc làm các options giống nhau ở đâu?
 
-........................................................................................................................
+- Một số gợi ý ban đầu dài và thiên về mô tả giao diện, chưa làm rõ khác biệt cơ chế User-led, User–AI co-create và AI-led.
+- Một số đề xuất diễn đạt kết quả như thể solution đã đúng hoặc user đã xác nhận, trong khi dữ liệu chỉ là interaction breakdown và trade-off của từng tester.
+- AI không thể thay nhóm tạo observation/quote; các phần feedback phải dựa trên phiên test thật.
 
 ### Tôi đã tự sửa hoặc quyết định lại điều gì?
 
-........................................................................................................................
+- Giữ nguyên evidence và cách diễn đạt thận trọng, không biến feedback thành claim “solution đã validated”.
+- Chốt ba option khác nhau về mechanism, bổ sung control/recovery và nguồn đối chứng để tester có thể kiểm tra hoặc quay lại.
+- Dựa trên feedback thật để ủng hộ Next Change “Tóm tắt trước → Kiểm chứng nguồn → Kiểm tra độ hiểu sau”, đồng thời giữ các câu hỏi Still Unproven cho vòng test tiếp theo.

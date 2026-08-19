@@ -1,6 +1,7 @@
 # Group Feedback Synthesis — Chặng 6
 
 > **Nhóm thực hiện:** Trần Thị Kiều Trang (2A202601498) & Nguyễn Quý Dũng (2A202601200)  
+> **Facilitation:** Cả Trang và Dũng đều trực tiếp test A/B/C với tester ngoài nhóm; bảng dưới đây tổng hợp các phiên của cả hai.
 > **Dữ liệu nguồn:** 3 phiên thử nghiệm người dùng độc lập tại [prototype-feedback-note.md](./prototype-feedback-note.md)  
 > **Mục tiêu:** Tổng hợp các mẫu hành vi (Patterns), đúc kết bằng chứng đối nghịch với kỳ vọng ban đầu, chốt quyết định thay đổi sản phẩm kế tiếp (Group Next Change) và xác định các giả định vẫn chưa được chứng minh (Still Unproven).
 

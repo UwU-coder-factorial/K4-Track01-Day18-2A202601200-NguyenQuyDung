@@ -7,7 +7,18 @@
 | Trần Thị Kiều Trang | 2A202601498 |
 | Nguyễn Quý Dũng | 2A202601200 |
 
+> Nhóm hiện có hai thành viên được ghi nhận trong repo này. Nếu nhóm có thành viên thứ ba, cần bổ sung tên và MHV trước khi nộp.
+
+## Đóng góp của tôi — Trần Thị Kiều Trang
+
+- Tổng hợp evidence Day 17 liên quan đến các tình huống người học bị vướng khái niệm, chốt Hypothesis Problem và ghi rõ điều vẫn chưa được chứng minh.
+- Tham gia phân biệt và review ba solution mechanisms A/B/C, đặc biệt các quyết định về agency, evidence/uncertainty và control/recovery.
+- Trực tiếp facilitate/test cả ba option A/B/C với tester ngoài nhóm; ghi nhận first action, điểm do dự, evidence được đọc/bỏ qua, recovery và trade-off.
+- Tham gia tổng hợp pattern giữa các feedback và chốt Group Next Change “Tóm tắt trọng tâm trước → Kiểm chứng nguồn → Kiểm tra độ hiểu sau”.
+
 ## Chặng 1 — Tổng hợp evidence
+
+Các đầu vào Day 17 được đặt cạnh nhau tại [day17-inputs.md](./day17-inputs.md) để đối chiếu trước khi chốt Hypothesis Problem.
 
 ### 1. Evidence Huddle
 | Practice Note / Lượt luyện | User đã thực sự làm/nói gì? (Hành vi) | Điều nhóm đang diễn giải |
@@ -126,3 +137,5 @@ Báo cáo phân tích chuyên sâu các Pattern, Group Next Change và Still Unp
 ## Nhật ký sử dụng AI (AI Support Log)
 
 Chi tiết nhật ký sử dụng AI của 2 thành viên nhóm (Nguyễn Quý Dũng & Trần Thị Kiều Trang) được ghi nhận đầy đủ tại [ai-support-log.md](./ai-support-log.md).
+
+Đầu vào Day 17 được đặt cạnh nhau tại [day17-inputs.md](./day17-inputs.md), gồm ba Practice Notes, Solution Parking Lot và Conversation Guide tham chiếu.
